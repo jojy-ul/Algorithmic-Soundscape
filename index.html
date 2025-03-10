@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Freesound Loop Generator</title>
+    <title>Algorithmic-Soundscape</title>
 
     <!-- jQuery -->
     <script type="text/javascript" src="static/jquery/js/jquery-1.11.0.min.js"></script>
@@ -46,15 +46,15 @@
 <div id="top_wrapper">
     <div id="top">
         
-        <img src="static/images/logo.png" style="width: 500px;margin-bottom:0px;">
+        <!--<img src="static/images/logo.png" style="width: 500px;margin-bottom:0px;"> -->
 
         <div id="mode_selector">
             <ul class="nav nav-pills nav-justified">
-                <li id="mode1"><a href="javascript:void(0);" onclick="change_mode('mode1');">Text query</a></li>
+                <!--<li id="mode1"><a href="javascript:void(0);" onclick="change_mode('mode1');">Text query</a></li>
                 <li id="mode5"><a href="javascript:void(0);" onclick="change_mode('mode5');">By tags</a></li>
                 <li id="mode4"><a href="javascript:void(0);" onclick="change_mode('mode4');">Timeline</a></li>
                 <li id="mode3"><a href="javascript:void(0);" onclick="change_mode('mode3');">Similarity</a></li>
-                <li id="mode2"><a href="javascript:void(0);" onclick="change_mode('mode2');">Random</a></li>
+                <li id="mode2"><a href="javascript:void(0);" onclick="change_mode('mode2');">Random</a></li>-->
             </ul>
         </div>
     </div>
@@ -112,19 +112,21 @@
         &nbsp;
         <button id="randomize_sequencer" type="button" class="btn btn-default btn-lg" style="height:57px;" onclick="randomize_sequence()" title="Randomize the steps of the sequence"><span class="glyphicon glyphicon-random"></button>
         &nbsp;
+        <button id="null_sequencer" type="button" class="btn btn-default btn-lg" style="height:57px;" onclick="null_sequence()" title="Sets the sequence to empty"><span class="glyphicon glyphicon-refresh"></button>
+            &nbsp;
         <button id="toggle_pad_sequencer" type="button" class="btn btn-default btn-lg" style="height:57px;" onclick="toggle_show_pad_sequencer()" title="Toggle sequence/triggers view"><span class="glyphicon glyphicon-align-justify"></button>
         &nbsp;
-        <div id="record_controls" style="display:inline-block;background-color: #eee;border-radius:5px; padding:4px;">
+        <!--<div id="record_controls" style="display:inline-block;background-color: #eee;border-radius:5px; padding:4px;">
             <div style="display:inline-block;"><input id="bars_input" type="text" class="form-control" placeholder="bars" value="4"style="height:57px;width:55px;text-align: center;" maxlength="2"></div>
             <button id="record" type="button" class="btn btn-default btn-lg" style="height:57px;color:#F31C36;" onclick="record()" title="Record (and download) as many measures as indicared in the number on the left. This works better when the sequencer is stopped."><span class="glyphicon glyphicon-record"></button><span id=download_placeholder></span>
         </div>
         &nbsp;
         <button id="download_set" type="button" class="btn btn-default btn-lg" style="height:57px;color:#00a841;padding:8px;" onclick="render_and_download_flattened_set()" title="Download the sounds loaded in the triggers rendered as a single 32-seconds long WAV file with sounds spaced every 2 seconds"><img src="static/images/download_audio.svg" style="width:35px"/></button>
         &nbsp;
-        <button id="download_midi" type="button" class="btn btn-default btn-lg" style="height:57px;;padding:8px;" onclick="export_midi_file()" title="Download the 16-step sequence as a .mid file. Should work together with the sounds set in external samplers to reproduce the same loop."><img src="static/images/download_midi.svg" style="width:35px;"/></button>
+        <button id="download_midi" type="button" class="btn btn-default btn-lg" style="height:57px;;padding:8px;" onclick="export_midi_file()" title="Download the 16-step sequence as a .mid file. Should work together with the sounds set in external samplers to reproduce the same loop."><img src="static/images/download_midi.svg" style="width:35px;"/></button>-->
 
         <!-- CC filter settings -->
-        <div style="display:inline-block;margin-top:10px;">
+        <!-- <div style="display:inline-block;margin-top:10px;">
             License filter: 
             <select class="form-control" id="license_select" style="width:160px;display:inline;" onchange="set_license_filter();">
                 <option value="all">All licenses</option>
@@ -149,7 +151,7 @@ The <b>Freesound Loop Generator</b> is a newer version (2020 update) of the old 
 It includes a bit (not too much) of code refactoring and adds <b>export</b> functionality so you can download the loops and sequences you create. More info (including source code) is available <a href="https://github.com/ffont/freesound-loop-generator">here</a>.</p>
 <p><img src="https://freesound.org/media/images/credits/mtg_nou.png"/></p>
 </div>
-</div>
+</div>-->
 
  
 </div>
